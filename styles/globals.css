@@ -43,6 +43,11 @@ code {
   margin-bottom: 20px;
 }
 
+.tabs ul{
+  list-style-type: none;
+  padding: 0;
+}
+
 .tab {
   text-decoration: none;
   color: #333;
