@@ -8,10 +8,10 @@ export default function Home() {
   return (
     <Layout>
       <div className="tabs">
-        <Link href="/">
+        <Link href="/index">
           <a className="tab">Home</a>
         </Link>
-        <Link href="/about">
+        <Link href="/geniusApp">
           <a className="tab">App</a>
         </Link>
 
