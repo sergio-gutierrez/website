@@ -1,5 +1,8 @@
 // components/Layout.js
 
+import '../styles.css'; // Import your CSS file
+
+
 import Navigation from './Navigation';
 
 const Layout = ({ children }) => {
