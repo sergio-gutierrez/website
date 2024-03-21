@@ -1,29 +1,24 @@
-// components/Navigation.js
-
+// @components/Layout.js
 import Link from 'next/link';
 
-const Navigation = () => {
-  return (
+const Layout = ({ children }) => (
+  <div>
     <nav>
       <ul>
         <li>
-          <Link href="/">
+          <Link href="/index">
             <a>Home</a>
           </Link>
         </li>
         <li>
-          <Link href="/about">
-            <a>About</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/contact">
-            <a>Contact</a>
+          <Link href="/geniusApp">
+            <a>App</a>
           </Link>
         </li>
       </ul>
     </nav>
-  );
-}
+    {children}
+  </div>
+);
 
-export default Navigation;
+export default Layout;
