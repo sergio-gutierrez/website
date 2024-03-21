@@ -8,7 +8,7 @@ export default function geniusApp() {
   return (
     <Layout>
         <div className="tabs">
-        <Link href="/index">
+        <Link href="/">
           <div className="tab">Home</div>
         </Link>
         <Link href="/geniusApp">
