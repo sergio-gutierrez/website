@@ -1,6 +1,6 @@
 // components/Layout.js
 
-import '../global.css'; // Import your CSS file
+import '../globals.css'; // Import your CSS file
 
 
 import Navigation from './Navigation';
