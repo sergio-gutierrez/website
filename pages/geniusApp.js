@@ -9,10 +9,10 @@ export default function geniusApp() {
     <Layout>
         <div className="tabs">
         <Link href="/index">
-          <a className="tab">Home</a>
+          <div className="tab">Home</div>
         </Link>
         <Link href="/geniusApp">
-          <a className="tab">App</a>
+          <div className="tab">App</div>
         </Link>
 
       </div>

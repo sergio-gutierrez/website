@@ -9,14 +9,14 @@ export default function Home() {
     <Layout>
       <div className="tabs">
         <Link href="/index">
-          <a className="tab">Home</a>
+          <div className="tab">Home</div>
         </Link>
         <Link href="/geniusApp">
-          <a className="tab">App</a>
+          <div className="tab">App</div>
         </Link>
 
       </div>
-      <h1>placeholder</h1>
+      <h1>home page</h1>
       <p>this is placeholder content</p>
     </Layout>
   )

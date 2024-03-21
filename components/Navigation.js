@@ -1,6 +1,6 @@
 // @components/Layout.js
 import Link from 'next/link';
-import '@styles/globals.css'
+//mport '@styles/globals.css'
 
 const Layout = ({ children }) => (
   <div>
@@ -8,12 +8,12 @@ const Layout = ({ children }) => (
       <ul>
         <li>
           <Link href="/index">
-            <a>Home</a>
+            <div>Home</div>
           </Link>
         </li>
         <li>
           <Link href="/geniusApp">
-            <a>App</a>
+            <div>App</div>
           </Link>
         </li>
       </ul>
