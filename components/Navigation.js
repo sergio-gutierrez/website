@@ -1,5 +1,6 @@
 // @components/Layout.js
 import Link from 'next/link';
+import '@styles/globals.css'
 
 const Layout = ({ children }) => (
   <div>
