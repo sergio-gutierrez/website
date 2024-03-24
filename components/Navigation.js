@@ -1,19 +1,17 @@
 // @components/Layout.js
 import Link from 'next/link';
-//mport '@styles/globals.css'
+
 
 const Layout = ({ children }) => (
   <div>
     <nav>
-      <ul>
-        <li>
+      <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
+        <li >
           <Link href="/index">
-            <div>Home</div>
           </Link>
         </li>
         <li>
           <Link href="/geniusApp">
-            <div>App</div>
           </Link>
         </li>
       </ul>

@@ -34,7 +34,6 @@ code {
   align-items: center;
 }
 
-/* styles.css */
 
 .tabs {
   display: flex;
@@ -59,4 +58,3 @@ code {
 .tab:hover {
   background-color: #e0e0e0;
 }
-
