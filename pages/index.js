@@ -18,6 +18,7 @@ export default function Home() {
       </div>
       <h1>home page</h1>
       <p>this is placeholder content</p>
+
     </Layout>
   )
 }

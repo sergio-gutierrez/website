@@ -46,8 +46,6 @@ code {
   top: 0;
   left: 0;
   background-color: #fcf59e;
-  top: 0;
-  left: 0;
 }
 
 .tabs ul{
@@ -62,8 +60,6 @@ code {
   padding: 10px;
   border-radius: 5px;
   background-color: #c77777;
-  top: 0;
-  left: 0;
 }
 
 .tab:hover {
