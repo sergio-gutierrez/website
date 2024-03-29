@@ -2,12 +2,13 @@ import Layout from '@components/Layout';
 import Link from 'next/link';
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
+import oauth2 from 'oauth';
 
 
 export default function geniusApp() {
-  const [songInput, setSongInput] = useState('');   // state to store the entered song
-  const [lyrics, setLyrics] = useState('');         // state to store fetched lyrics 
-  const [accessToken, setAccessToken] = useState(''); 
+  const [songInput, setSongInput] = useState('');     // state to store the entered song
+  const [lyrics, setLyrics] = useState('');           // state to store fetched lyrics 
+  const [accessToken, setAccessToken] = useState(''); // 
 
   useEffect(() => {
     const handleOAuthCallback = async () => {
@@ -16,7 +17,11 @@ export default function geniusApp() {
         if(code){
           const tokenParams = {
             code,
+            client_id: 'f0Z-QAgvyVYSdC18PYyAIE4xI8LmTVPCz5onapsYCDw-SPCq-9RMBlquN0t2BOgm',
+            client_secret: '36Eqv9lOvk7I-t7HaggoZFHKVhafTsjEObQtXxA3QuIM6jp_W5NHvOwCd4a-ysFX2vWhaFVg_uLJmm9T37K1aA',
             redirect_uri: 'http://sergio-g.com/geniusApp',
+            response_type: 'code',
+            grant_type: 'authorization_code',
           };
           const tokenResponse = await oauth.authorizationCode.getToken(tokenParams);
           const token = oauth2.accessToken.create(tokenResponse);
