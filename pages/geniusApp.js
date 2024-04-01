@@ -15,6 +15,7 @@ export default function geniusApp() {
     const handleOAuthCallback = async () => {
       try {
         const params = new URLSearchParams(window.location.search);
+        console.log('Authorization Code', code); // log for authorization code 
         const code = params.get('code');
         if(code){
           const tokenParams = {
@@ -26,13 +27,15 @@ export default function geniusApp() {
             grant_type: 'authorization_code',
           };
           const tokenResponse = await oauth.authorizationCode.getToken(tokenParams);
+          console.log('Token Response');
+
           const token = oauth2.accessToken.create(tokenResponse);
           setAccessToken(token.token.access_token);
         } else {
           console.error('Authorization code not found in URL');
         }
       }catch (error) {
-        console.error('Error exchnging authorization code for access token.', error);
+        console.error('Error exchanging authorization code for access token.', error);
       }
       };
       handleOAuthCallback();
