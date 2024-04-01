@@ -2,7 +2,7 @@ import Layout from '@components/Layout';
 import Link from 'next/link';
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
-import oauth2 from './oauth';
+import oauth2 from '../components/oauth';
 
 
 
