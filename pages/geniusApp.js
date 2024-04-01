@@ -14,7 +14,8 @@ export default function geniusApp() {
   useEffect(() => {
     const handleOAuthCallback = async () => {
       try {
-        const {code} = new URLSearchParams(window.location.search);
+        const params = new URLSearchParams(window.location.search);
+        const code = params.get('code');
         if(code){
           const tokenParams = {
             code,
