@@ -11,9 +11,11 @@ const credentials = {
         secret: '36Eqv9lOvk7I-t7HaggoZFHKVhafTsjEObQtXxA3QuIM6jp_W5NHvOwCd4a-ysFX2vWhaFVg_uLJmm9T37K1aA',
     },
     auth: {
-        tokenHost: 'https://api.genius.com/',
+        tokenHost: 'https://api.genius.com/oauth',
         tokenPath: '/oauth/token',
         authorizePath: '/oauth/authorize',
+        //response_type: 'code',
+        grant_type: "authorization_code",
     },
 };
 
